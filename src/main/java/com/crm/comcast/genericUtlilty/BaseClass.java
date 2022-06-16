@@ -21,6 +21,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 //asvcfshs
 public class BaseClass {
 	
+	//compare
 	public Propertyuti plib = new Propertyuti();
 	public Exceluti elib=new Exceluti();
 	public Javauti jlib=new Javauti();
