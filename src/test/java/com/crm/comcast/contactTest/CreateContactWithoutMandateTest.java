@@ -10,6 +10,7 @@ import com.crm.comcast.genericUtlilty.BaseClass;
 public class CreateContactWithoutMandateTest extends BaseClass{
 	
 	// create contact without mandate 
+	//Ignore
 	
 	@Test
 	public void contactwithoutlastnameTest() throws Throwable {
