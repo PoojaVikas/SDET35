@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-16T10:38:29 IST" name="Default suite" finished-at="2022-06-16T10:38:29 IST" duration-ms="35">
+    <groups>
+      <group name="regressionTest">
+        <method signature="CreateContactTest.createcontactTest()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@31fa1761]" name="createcontactTest" class="com.crm.comcast.contactTest.CreateContactTest"/>
+      </group> <!-- regressionTest -->
+      <group name="smokeTest">
+        <method signature="CreateContactTest.createcontactTest()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@31fa1761]" name="createcontactTest" class="com.crm.comcast.contactTest.CreateContactTest"/>
+      </group> <!-- smokeTest -->
+    </groups>
+    <test started-at="2022-06-16T10:38:29 IST" name="Default test" finished-at="2022-06-16T10:38:29 IST" duration-ms="35">
+      <class name="com.crm.comcast.contactTest.CreateContactTest">
+        <test-method is-config="true" signature="beforesuite()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@31fa1761]" started-at="2022-06-16T10:38:29 IST" name="beforesuite" finished-at="2022-06-16T10:38:29 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuite -->
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@31fa1761]" started-at="2022-06-16T10:38:29 IST" name="beforetest" finished-at="2022-06-16T10:38:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method is-config="true" signature="beforeclass(java.lang.String)[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@31fa1761]" started-at="2022-06-16T10:38:29 IST" name="beforeclass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655356109224" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by BeforeClass on method beforeclass but has not been marked @Optional or defined
+in C:\Users\Pooja Vikas\AppData\Local\Temp\testng-eclipse--456797919\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by BeforeClass on method beforeclass but has not been marked @Optional or defined
+in C:\Users\Pooja Vikas\AppData\Local\Temp\testng-eclipse--456797919\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@31fa1761]" started-at="2022-06-16T10:38:29 IST" name="beforemethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655356109238" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="createcontactTest()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@31fa1761]" started-at="2022-06-16T10:38:29 IST" name="createcontactTest" finished-at="2022-06-16T10:38:29 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by BeforeClass on method beforeclass but has not been marked @Optional or defined
+in C:\Users\Pooja Vikas\AppData\Local\Temp\testng-eclipse--456797919\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by BeforeClass on method beforeclass but has not been marked @Optional or defined
+in C:\Users\Pooja Vikas\AppData\Local\Temp\testng-eclipse--456797919\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcontactTest -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@31fa1761]" started-at="2022-06-16T10:38:29 IST" name="aftermethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655356109242" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@31fa1761]" started-at="2022-06-16T10:38:29 IST" name="afterclass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655356109243" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+        <test-method is-config="true" signature="aftersuite()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@31fa1761]" started-at="2022-06-16T10:38:29 IST" name="aftersuite" finished-at="2022-06-16T10:38:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuite -->
+        <test-method is-config="true" signature="aftermethod1()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@31fa1761]" started-at="2022-06-16T10:38:29 IST" name="aftermethod1" finished-at="2022-06-16T10:38:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod1 -->
+      </class> <!-- com.crm.comcast.contactTest.CreateContactTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
