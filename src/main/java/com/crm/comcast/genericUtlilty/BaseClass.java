@@ -42,18 +42,47 @@ public class BaseClass {
 	}
 	
 	
+//	@BeforeClass(groups = {"smokeTest","regressionTest"})
+//	public void beforeclass() throws Throwable {
+//		String browser = plib.propertyuti("browser");
+//		if(browser.equals("firefox"))
+//		{
+//			WebDriverManager.firefoxdriver().setup();
+//		    driver= new FirefoxDriver();
+//		}else if(browser.equals("chrome")){
+//			WebDriverManager.chromedriver().setup();
+//			 driver= new ChromeDriver();
+//			
+//		}else if(browser.equals("ie")) {
+//			 driver = new InternetExplorerDriver();
+//		}else {
+//			WebDriverManager.chromedriver().setup();
+//			driver = new ChromeDriver();
+//		}
+//		driver.manage().window().maximize();
+//		wlib.implicitwait(driver);
+//		System.out.println("Browser launched");
+//		sdriver=driver;
+//		driver.get(plib.propertyuti("url"));
+//		sdriver = driver; 
+//		
+//	}
+	
+	
+	//@Parameters("Browser")
 	@BeforeClass(groups = {"smokeTest","regressionTest"})
 	public void beforeclass() throws Throwable {
-		String browser = plib.propertyuti("browser");
-		if(browser.equals("firefox"))
+		String Browser = System.getProperty("bro");
+		System.out.println(Browser);
+		if(Browser.equals("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
 		    driver= new FirefoxDriver();
-		}else if(browser.equals("chrome")){
+		}else if(Browser.equals("chrome")){
 			WebDriverManager.chromedriver().setup();
 			 driver= new ChromeDriver();
 			
-		}else if(browser.equals("ie")) {
+		}else if(Browser.equals("ie")) {
 			 driver = new InternetExplorerDriver();
 		}else {
 			WebDriverManager.chromedriver().setup();
