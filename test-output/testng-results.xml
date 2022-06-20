@@ -1,55 +1,457 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="8" total="13" passed="0" failed="0" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-20T15:02:26 IST" name="Default suite" finished-at="2022-06-20T15:02:52 IST" duration-ms="26527">
+  <suite started-at="2022-06-20T16:59:24 IST" name="Suite" finished-at="2022-06-20T16:59:24 IST" duration-ms="182">
     <groups>
       <group name="regressionTest">
-        <method signature="CreateCampaignTest.createcampaignTest()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@3c7f66c4]" name="createcampaignTest" class="com.crm.comcast.campaignTest.CreateCampaignTest"/>
+        <method signature="CreateCampaignTest.createcampaignTest()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@27462a88]" name="createcampaignTest" class="com.crm.comcast.campaignTest.CreateCampaignTest"/>
+        <method signature="CreateContactTest.createcontactTest()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@47d9a273]" name="createcontactTest" class="com.crm.comcast.contactTest.CreateContactTest"/>
       </group> <!-- regressionTest -->
       <group name="smokeTest">
-        <method signature="CreateCampaignTest.createcampaignTest()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@3c7f66c4]" name="createcampaignTest" class="com.crm.comcast.campaignTest.CreateCampaignTest"/>
+        <method signature="CreateCampaignWithProductTest.createcampaignwithproductTest()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignWithProductTest@25fb8912]" name="createcampaignwithproductTest" class="com.crm.comcast.campaignTest.CreateCampaignWithProductTest"/>
+        <method signature="CreateCampaignTest.createcampaignTest()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@27462a88]" name="createcampaignTest" class="com.crm.comcast.campaignTest.CreateCampaignTest"/>
+        <method signature="CreateContactTest.createcontactTest()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@47d9a273]" name="createcontactTest" class="com.crm.comcast.contactTest.CreateContactTest"/>
+        <method signature="DeleteContactTest.deletecontactTest()[pri:0, instance:com.crm.comcast.contactTest.DeleteContactTest@26e356f0]" name="deletecontactTest" class="com.crm.comcast.contactTest.DeleteContactTest"/>
       </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2022-06-20T15:02:26 IST" name="Default test" finished-at="2022-06-20T15:02:52 IST" duration-ms="26527">
+    <test started-at="2022-06-20T16:59:24 IST" name="Test1" finished-at="2022-06-20T16:59:24 IST" duration-ms="53">
       <class name="com.crm.comcast.campaignTest.CreateCampaignTest">
-        <test-method is-config="true" signature="beforesuite()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@3c7f66c4]" started-at="2022-06-20T15:02:26 IST" name="beforesuite" finished-at="2022-06-20T15:02:26 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforesuite -->
-        <test-method is-config="true" signature="beforetest()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@3c7f66c4]" started-at="2022-06-20T15:02:26 IST" name="beforetest" finished-at="2022-06-20T15:02:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@27462a88]" started-at="2022-06-20T16:59:24 IST" name="beforetest" finished-at="2022-06-20T16:59:24 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@3c7f66c4]" started-at="2022-06-20T15:02:26 IST" name="beforeclass" finished-at="2022-06-20T15:02:32 IST" duration-ms="6244" status="PASS">
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@27462a88]" started-at="2022-06-20T16:59:24 IST" name="beforeclass" finished-at="2022-06-20T16:59:24 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "Browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "Browser" is null
+at com.crm.comcast.genericUtlilty.BaseClass.beforeclass(BaseClass.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@3c7f66c4]" started-at="2022-06-20T15:02:32 IST" name="beforemethod" finished-at="2022-06-20T15:02:35 IST" duration-ms="3531" status="PASS">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@27462a88]" started-at="2022-06-20T16:59:24 IST" name="beforemethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564362" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method signature="createcampaignTest()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@3c7f66c4]" started-at="2022-06-20T15:02:35 IST" name="createcampaignTest" finished-at="2022-06-20T15:02:50 IST" duration-ms="14512" status="PASS">
+        <test-method signature="createcampaignTest()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@27462a88]" started-at="2022-06-20T16:59:24 IST" name="createcampaignTest" finished-at="2022-06-20T16:59:24 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "Browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "Browser" is null
+at com.crm.comcast.genericUtlilty.BaseClass.beforeclass(BaseClass.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createcampaignTest -->
-        <test-method is-config="true" signature="aftermethod()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@3c7f66c4]" started-at="2022-06-20T15:02:50 IST" name="aftermethod" finished-at="2022-06-20T15:02:52 IST" duration-ms="1965" status="PASS">
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@27462a88]" started-at="2022-06-20T16:59:24 IST" name="aftermethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564370" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@3c7f66c4]" started-at="2022-06-20T15:02:52 IST" name="afterclass" finished-at="2022-06-20T15:02:52 IST" duration-ms="240" status="PASS">
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@27462a88]" started-at="2022-06-20T16:59:24 IST" name="afterclass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564372" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterclass -->
-        <test-method is-config="true" signature="aftersuite()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@3c7f66c4]" started-at="2022-06-20T15:02:52 IST" name="aftersuite" finished-at="2022-06-20T15:02:52 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aftersuite()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@27462a88]" started-at="2022-06-20T16:59:24 IST" name="aftersuite" finished-at="2022-06-20T16:59:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftersuite -->
-        <test-method is-config="true" signature="aftermethod1()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignTest@3c7f66c4]" started-at="2022-06-20T15:02:52 IST" name="aftermethod1" finished-at="2022-06-20T15:02:52 IST" duration-ms="1" status="PASS">
+      </class> <!-- com.crm.comcast.campaignTest.CreateCampaignTest -->
+    </test> <!-- Test1 -->
+    <test started-at="2022-06-20T16:59:24 IST" name="Test" finished-at="2022-06-20T16:59:24 IST" duration-ms="56">
+      <class name="com.crm.comcast.organisationTest.CreateOrgsTest">
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:com.crm.comcast.organisationTest.CreateOrgsTest@1e04fa0a]" started-at="2022-06-20T16:59:24 IST" name="beforetest" finished-at="2022-06-20T16:59:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.crm.comcast.organisationTest.CreateOrgsTest@1e04fa0a]" started-at="2022-06-20T16:59:24 IST" name="beforeclass" finished-at="2022-06-20T16:59:24 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "Browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "Browser" is null
+at com.crm.comcast.genericUtlilty.BaseClass.beforeclass(BaseClass.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.crm.comcast.organisationTest.CreateOrgsTest@1e04fa0a]" started-at="2022-06-20T16:59:24 IST" name="beforemethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564362" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="createorganisationTest()[pri:0, instance:com.crm.comcast.organisationTest.CreateOrgsTest@1e04fa0a]" started-at="2022-06-20T16:59:24 IST" name="createorganisationTest" finished-at="2022-06-20T16:59:24 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "Browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "Browser" is null
+at com.crm.comcast.genericUtlilty.BaseClass.beforeclass(BaseClass.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createorganisationTest -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:com.crm.comcast.organisationTest.CreateOrgsTest@1e04fa0a]" started-at="2022-06-20T16:59:24 IST" name="aftermethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564369" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.crm.comcast.organisationTest.CreateOrgsTest@1e04fa0a]" started-at="2022-06-20T16:59:24 IST" name="afterclass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564371" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+        <test-method is-config="true" signature="aftersuite()[pri:0, instance:com.crm.comcast.organisationTest.CreateOrgsTest@1e04fa0a]" started-at="2022-06-20T16:59:24 IST" name="aftersuite" finished-at="2022-06-20T16:59:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuite -->
+      </class> <!-- com.crm.comcast.organisationTest.CreateOrgsTest -->
+      <class name="com.crm.comcast.campaignTest.CreateCampaignWithProductTest">
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignWithProductTest@25fb8912]" started-at="2022-06-20T16:59:24 IST" name="beforeclass" finished-at="2022-06-20T16:59:24 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "Browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "Browser" is null
+at com.crm.comcast.genericUtlilty.BaseClass.beforeclass(BaseClass.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignWithProductTest@25fb8912]" started-at="2022-06-20T16:59:24 IST" name="beforemethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564374" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="createcampaignwithproductTest()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignWithProductTest@25fb8912]" started-at="2022-06-20T16:59:24 IST" name="createcampaignwithproductTest" finished-at="2022-06-20T16:59:24 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "Browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "Browser" is null
+at com.crm.comcast.genericUtlilty.BaseClass.beforeclass(BaseClass.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcampaignwithproductTest -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignWithProductTest@25fb8912]" started-at="2022-06-20T16:59:24 IST" name="afterclass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564376" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:com.crm.comcast.campaignTest.CreateCampaignWithProductTest@25fb8912]" started-at="2022-06-20T16:59:24 IST" name="aftermethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564376" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+      </class> <!-- com.crm.comcast.campaignTest.CreateCampaignWithProductTest -->
+    </test> <!-- Test -->
+    <test started-at="2022-06-20T16:59:24 IST" name="Test2" finished-at="2022-06-20T16:59:24 IST" duration-ms="28">
+      <class name="com.crm.comcast.contactTest.DeleteContactTest">
+        <test-method is-config="true" signature="beforesuite()[pri:0, instance:com.crm.comcast.contactTest.DeleteContactTest@26e356f0]" started-at="2022-06-20T16:59:24 IST" name="beforesuite" finished-at="2022-06-20T16:59:24 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuite -->
+        <test-method is-config="true" signature="beforetest()[pri:0, instance:com.crm.comcast.contactTest.DeleteContactTest@26e356f0]" started-at="2022-06-20T16:59:24 IST" name="beforetest" finished-at="2022-06-20T16:59:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforetest -->
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.crm.comcast.contactTest.DeleteContactTest@26e356f0]" started-at="2022-06-20T16:59:24 IST" name="beforeclass" finished-at="2022-06-20T16:59:24 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "Browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "Browser" is null
+at com.crm.comcast.genericUtlilty.BaseClass.beforeclass(BaseClass.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.crm.comcast.contactTest.DeleteContactTest@26e356f0]" started-at="2022-06-20T16:59:24 IST" name="beforemethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564483" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="deletecontactTest()[pri:0, instance:com.crm.comcast.contactTest.DeleteContactTest@26e356f0]" started-at="2022-06-20T16:59:24 IST" name="deletecontactTest" finished-at="2022-06-20T16:59:24 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "Browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "Browser" is null
+at com.crm.comcast.genericUtlilty.BaseClass.beforeclass(BaseClass.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecontactTest -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:com.crm.comcast.contactTest.DeleteContactTest@26e356f0]" started-at="2022-06-20T16:59:24 IST" name="aftermethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564486" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.crm.comcast.contactTest.DeleteContactTest@26e356f0]" started-at="2022-06-20T16:59:24 IST" name="afterclass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564488" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+        <test-method is-config="true" signature="aftersuite()[pri:0, instance:com.crm.comcast.contactTest.DeleteContactTest@26e356f0]" started-at="2022-06-20T16:59:24 IST" name="aftersuite" finished-at="2022-06-20T16:59:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuite -->
+        <test-method is-config="true" signature="aftermethod1()[pri:0, instance:com.crm.comcast.contactTest.DeleteContactTest@26e356f0]" started-at="2022-06-20T16:59:24 IST" name="aftermethod1" finished-at="2022-06-20T16:59:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod1 -->
-      </class> <!-- com.crm.comcast.campaignTest.CreateCampaignTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.crm.comcast.contactTest.DeleteContactTest -->
+      <class name="com.crm.comcast.contactTest.CreateContactTest">
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@47d9a273]" started-at="2022-06-20T16:59:24 IST" name="beforeclass" finished-at="2022-06-20T16:59:24 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "Browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "Browser" is null
+at com.crm.comcast.genericUtlilty.BaseClass.beforeclass(BaseClass.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@47d9a273]" started-at="2022-06-20T16:59:24 IST" name="beforemethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564494" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="createcontactTest()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@47d9a273]" started-at="2022-06-20T16:59:24 IST" name="createcontactTest" finished-at="2022-06-20T16:59:24 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "Browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "Browser" is null
+at com.crm.comcast.genericUtlilty.BaseClass.beforeclass(BaseClass.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcontactTest -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@47d9a273]" started-at="2022-06-20T16:59:24 IST" name="aftermethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564500" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.crm.comcast.contactTest.CreateContactTest@47d9a273]" started-at="2022-06-20T16:59:24 IST" name="afterclass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1655724564502" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- com.crm.comcast.contactTest.CreateContactTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>
