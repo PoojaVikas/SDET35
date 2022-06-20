@@ -145,6 +145,8 @@ public class Webdriveruti implements Iconstants {
 			   Actions act = new Actions(driver);
 			   act.sendKeys(Keys.ENTER).perform();
 		   }
+		   
+		   
 
 		   
 		   
@@ -170,4 +172,3 @@ public   WebDriver getWebbrowser() throws Throwable
 }
 }
 
-///method overloading in selenium : explicit wait for visiblity of secs

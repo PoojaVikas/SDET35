@@ -21,7 +21,7 @@ public class CreateContactWithoutMandateTest extends BaseClass{
 		CreateContactPage ccp = new CreateContactPage(driver);
 		String firstname = elib.exceluti("Sheet1", 1, 0)+jlib.rand();
 		ccp.createcontwithoutlastname(firstname, "Last Name cannot be empty");
-		
+		System.out.println("gjgj");
 	}
 }
 

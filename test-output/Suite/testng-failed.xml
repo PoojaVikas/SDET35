@@ -50,19 +50,6 @@
   </test> <!-- Test(failed) -->
   <test thread-count="2" parallel="tests" name="Test2(failed)">
     <classes>
-      <class name="com.crm.comcast.contactTest.DeleteContactTest">
-        <methods>
-          <include name="aftersuite"/>
-          <include name="beforetest"/>
-          <include name="deletecontactTest"/>
-          <include name="aftermethod1"/>
-          <include name="beforesuite"/>
-          <include name="beforemethod"/>
-          <include name="afterclass"/>
-          <include name="aftermethod"/>
-          <include name="beforeclass"/>
-        </methods>
-      </class> <!-- com.crm.comcast.contactTest.DeleteContactTest -->
       <class name="com.crm.comcast.contactTest.CreateContactTest">
         <methods>
           <include name="aftersuite"/>
@@ -76,6 +63,19 @@
           <include name="createcontactTest"/>
         </methods>
       </class> <!-- com.crm.comcast.contactTest.CreateContactTest -->
+      <class name="com.crm.comcast.contactTest.DeleteContactTest">
+        <methods>
+          <include name="aftersuite"/>
+          <include name="beforetest"/>
+          <include name="deletecontactTest"/>
+          <include name="aftermethod1"/>
+          <include name="beforesuite"/>
+          <include name="beforemethod"/>
+          <include name="afterclass"/>
+          <include name="aftermethod"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- com.crm.comcast.contactTest.DeleteContactTest -->
     </classes>
   </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

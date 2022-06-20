@@ -28,6 +28,7 @@ public class Exceluti {
 		Cell cell = row.getCell(cellnum);
 		String sval = cell.toString();
 		return sval;
+	
 	}
 }
 // DataFormatter dformat = new DataFormatter();

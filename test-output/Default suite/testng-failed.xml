@@ -3,8 +3,9 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.comcast.contactTest.CreateContactTest">
+      <class name="com.crm.comcast.campaignTest.CreateCampaignTest">
         <methods>
+          <include name="createcampaignTest"/>
           <include name="beforetest"/>
           <include name="aftersuite"/>
           <include name="aftermethod1"/>
@@ -13,9 +14,8 @@
           <include name="aftermethod"/>
           <include name="afterclass"/>
           <include name="beforeclass"/>
-          <include name="createcontactTest"/>
         </methods>
-      </class> <!-- com.crm.comcast.contactTest.CreateContactTest -->
+      </class> <!-- com.crm.comcast.campaignTest.CreateCampaignTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
