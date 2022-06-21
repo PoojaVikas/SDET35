@@ -84,10 +84,12 @@ public class BaseClass {
 			
 		}else if(Browser.equals("ie")) {
 			 driver = new InternetExplorerDriver();
-		}else {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
 		}
+//			 else {
+//			WebDriverManager.chromedriver().setup();
+//			driver = new ChromeDriver();
+//		}
+		
 		driver.manage().window().maximize();
 		wlib.implicitwait(driver);
 		System.out.println("Browser launched");
